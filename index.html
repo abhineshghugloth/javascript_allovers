@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    .block{display:block;}
+</style>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "DAD";
+}
+function myFunction1() {
+    document.getElementById("demo1").innerHTML = "Paragraph changed.";
+}
+
+function myFunction2(){
+    document.getElementById("demo2").innerHTML="ANKITHA"
+}
+
+</script>
+<style>
+    .abhi{width:50%;
+    background-color: aquamarine;
+    color: black;
+    height:100px;
+    text-align: center;
+    padding:0px 30px;
+    line-height:120px;}
+</style>
+</head>
+   
+<body>
+    <h2>This is JAVA SCRIPT PROGRAM</h2>
+    <p id="demo">
+        ABHINESH
+    </p>
+    <p id="demo1">
+            Ankitha1
+        </p>
+        <p id="demo2">
+                ABHINESH
+            </p>
+    <button id="demo" class="block" onclick="myFunction()">DEMO</button>
+    <button id="demo1" class="block" onclick="myFunction1()">DEMO_1</button>
+    <button id="demo2" class="block" onclick="myFunction2()">DEMO_2</button>
+    <h2>*************************images insert******************</h2>
+
+ <button onclick="document.getElementById('myImage').src=''">NORMAL </button>
+    <button onclick="document.getElementById('myImage').src='images.png'">Turn on </button>
+
+    <img id="myImage" src="images.png" style="width:100px">
+    
+    <button onclick="document.getElementById('myImage').src='download.png'">Turn off</button>
+
+    <h1>*************************display possibilites******************</h1>
+    <h1>demo-1</h1>
+<h4>1.innerhtml</h4>
+<h4>2.documnet.write</h4>
+<h4>3.window.alert</h4>
+<h4>4.console.log()</h4>
+<h2>1.innerhtml</h2>
+<h5>this is about innerhtml which change the properties by javascript</h5>
+<p>adding the values in the html using java script</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo3").innerHTML = 20+50;
+</script>
+    <h1>demo-2</h1>
+<h3>using button</h3>
+<p id="button">this is adding using button</p>
+<button id="button" onclick="myfunction4()">addition</button>
+<script>
+    function myfunction4(){
+        document.getElementById('button').innerHTML=50+50-30+20-20;
+    }
+</script>
+
+<h1>2.document.write</h1>
+<p>directly we can add but not using function but only id can be considered for example</p>
+<p>direct addition</p>
+  <script>
+document.write(50+30);
+  </script>
+     
+     <h1>####demo-1%%%%%</h1>
+
+  <form name="myForm">
+        <input type="checkbox" name="text1"/>
+        <input type="button" onClick="validator()"  name="validation" value="Press me for validation"/>
+    </form>
+    <script type="text/javascript">
+        function validator() {
+            if (document.myForm .text1 .checked)
+                document.write("checkBox is checked");
+            else 
+                document.write("checkBox is NOT checked");
+        }
+
+    </script>
+
+<h1>####demo-2%%%%%</h1>
+
+
+<p>Click the button to make a BUTTON element with text.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var btn = document.createElement("BUTTON");
+    var t = document.createTextNode("CLICK ME");
+    btn.appendChild(t);
+    document.body.appendChild(btn);
+}
+</script>
+
+<h1>3.window.alert()</h1>
+<p>this is an windows alert which will arrive as a pop-box</p>
+<script>
+   window.alert(50+60);
+</script>
+
+<h1>4.console.log()</h1>
+
+<p>this is an program which was run in debugger only when we press console down button which will gives an results</p>
+<script>
+    console.log(100+60-40-60+40);
+</script>
+    <h1>*************************statements******************</h1>
+    <h3 style="color:blue;">####demo-1%%%%%</h3>
+
+    <h3>JavaScript Statements</h3>
+    <p>JavaScript statements are composed of:
+
+Values, Operators, Expressions, Keywords, and Comments.</p>
+<p id="demo5">this is statement demo</p>
+<script>
+    document.getElementById("demo5").innerHTML=("<b style=color:red;>Hello abhi.i can change my color</b>")
+</script>
+<h3 style="color:blue;">####demo-2%%%%%</h3>
+<p id="found_math"></p>
+<script>
+    var x,y,z;
+    x=10;
+    y=20;
+    z=x+y;
+document.getElementById("found_math").innerHTML=z;
+</script>
+<h3 style="color:blue;">####demo-3####</h3>
+<!-- <div name="demo6"> -->
+        <div class="abhi">
+                <p id="abhi1"> abhinesh </p>
+             </div>
+    <button id="abhi1" onclick="functio()" name="abi">clock on</button>
+<!-- </div> -->
+<script>
+    //  function validator1() {
+    //         if (document.demo6 .abi .checked)
+    //             document.write("checkBox is checked");
+    //         else 
+    //             document.write("checkBox is NOT checked");
+    //     }
+    function functio(){
+       
+        document.getElementById("abhi1").innerHTML=("<b style=color:blue;>Hello abhi.i can change my color ur very great</b>")
+
+    }
+</script>
+<h3 style="color:blue;">####demo-4####</h3>
+
+<h6>this is an demo  on statements chapter</h6>
+<p>the out prints in as a functions</p>
+<p id="statements"><b>abhinesh</b></p>
+<button type="button"  onclick="statement()">abhi</button>
+<script>
+    function statement(){
+    document.getElementById("statements").innerHTML="<b>....HELLO ABHINESH!!!!!!!</b>"}
+</script>
+<h3 style="color:blue;">#### Demo-5 ####</h3>
+<p id="stmt">this is calculations</p>
+<p id="stmt1">this is calculations</p>
+
+<script>
+    var a,b,c;
+    a=3;
+    b=9;
+    c=a+b;
+    document.getElementById("stmt").innerHTML="the value of additions has been printed and the value is ="+ c +"."
+    document.getElementById("stmt1").innerHTML= c ;
+
+//  return c; 
+
+
+</script>
+<h1 style="color:red;"><b>*************************syntaxs******************</b></h1>
+<h3 style="color:blue;">####demo-1####</h3>
+
+<h4><b>no can be write with or with out decials</b></h4>
+<p>with decimals</p>
+<p id="synt"></p>
+<script>
+    document.getElementById("synt").innerHTML=10.50
+</script>
+<h3 style="color:blue;">####demo-2####</h3>
+<p>strings or written in double or single quotes</p>
+<p id="string"></p>
+<p id="string1"></p>
+<script>
+    document.getElementById("string").innerHTML='!Hello abhi...'
+  
+    document.getElementById("string1").innerHTML="!Hello abhinesh..."
+
+</script>
+<h3 style="color:blue;">####demo-3(expressions)####</h3>
+
+<p id="exp"></p>
+<script>
+    document.getElementById("exp").innerHTML="abhi"+"ankitha"
+</script>
+<h3 style="color:blue;">####demo-4(variables,values,expressions,operators,keyword)####</h3>
+<p id="val1"></p>
+<p id="exp1"></p>
+<p id="var1"></p>
+<p id="ope1"></p>
+<script>
+    var x,y,z;
+    x=5;
+    y=4;
+    z=x+y;
+    z=x*4
+    document.getElementById("val1").innerHTML=x;
+    document.getElementById("exp1").innerHTML="abhi"+"jyothi";
+    document.getElementById("var1").innerHTML=5;
+    document.getElementById("ope1").innerHTML=x*10;
+    document.getElementById("ope1").innerHTML=x*8;
+
+</script>
+<h1 style="color:red;"><b>*************************variables******************</b></h1>
+<p id="vari"></p>
+<script>
+    var x,y,z;
+    var abhi,kaka,praveen,ankitha;
+    x=50;
+    y=100;
+    z=x+y;
+    abhi=5;
+    kaka=30;
+    praveen=100;
+    ankitha=abhi;
+    document.getElementById("vari").innerHTML="this are the varables which stores the data"   +z ; + ankitha;
+</script>
+<p id="vsr_stm"></p>
+<script>
+    var abhi=120;
+    var kaka=20;
+    var ankitha=abhi+kaka;
+document.getElementById("vsr_stm").innerHTML=+ankitha;
+</script>
+<h1 style="color:red;"><b>*************************functions******************</b></h1>
+<h3 style="color:blue;">####demo-1####</h3>
+<p>this is function multiplications</p>
+<p id="demo8"></p>
+
+<script>
+function myFunction1(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("demo8").innerHTML = myFunction1(7, 3);
+</script>
+<h3 style="color:blue;">####demo-2####</h3>
+<h4><b>objects</b></h4>
+<p>This is an objects where 
+    <br>
+    1.objects-car
+    2.properties-car.name,color,weight,height etccccc....
+    3.methods-car start,drive,brake,stop etc......
+</p>
+<p id="car_property_name"></p>
+<script>
+    var car={name:"flate",color:"blue",weight:"500kg",height:"170cm",}
+   document.getElementById("car_property_name").innerHTML=
+   "name is:"+car.name +
+   "popular color:" + car.color +
+    "normal weights:" + car.weight + 
+    "normal heights:" + car.height
+</script>
+</body>
+</html>
